@@ -1,6 +1,6 @@
 # - * - coding: UTF-8 - * -
 
-import MySQLdb
+import pymysql
 
 db_name = 'spiderbot'
 uname = 'root'
@@ -10,8 +10,8 @@ host = '127.0.0.1'
 class DBWraper:
     def __init__(self):
         try:
-            self.dbconn = MySQLdb.connect(charset='utf8', init_command='SET NAMES UTF8',host=host,user=uname,passwd=password,db=db_name)
-            self.dbconn.set_character_set('utf8') #cur = self.dbconn.cursor()
+            self.dbconn = pymysql.connect(charset='utf8', init_command='SET NAMES UTF8',host=host, port=3306, user=uname, passwd=password, db=db_name)
+            #self.dbconn.set_character_set('utf8') #cur = self.dbconn.cursor()
             #cur.execute('SET NAMES utf8;')
         except Exception,msg:
             self.dbconn = None
