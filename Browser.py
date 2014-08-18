@@ -18,11 +18,12 @@ class Browser:
              if proxy_ip:
                 service_args = ['--proxy=%s' % proxy_ip,'--proxy-type=http',]
                 print service_args
-                self.browser = webdriver.PhantomJS("./phantomjs")  #self.browser = webdriver.PhantomJS("./phantomjs",service_args=service_args) #self.browser = webdriver.Firefox()
+                #self.browser = webdriver.PhantomJS("./phantomjs")  #self.browser = webdriver.PhantomJS("./phantomjs",service_args=service_args) #self.browser = webdriver.Firefox()
                 #proxy = Proxy({'proxyType': ProxyType.MANUAL,'httpProxy': proxy_ip})
                 #self.browser = webdriver.Firefox()
+                self.browser = webdriver.Chrome()
              else:
-                 self.browser = webdriver.PhantomJS("./phantomjs")
+                self.browser = webdriver.Chrome() #self.browser = webdriver.PhantomJS("./phantomjs")
             #self.browser = webdriver.PhantomJS("./phantomjs")
              self.browser.set_page_load_timeout(60)
              self.browser.set_script_timeout(60)
@@ -61,6 +62,13 @@ class Browser:
         try:
             element.send_keys(text)
         except Exception,msg:
+            pass
+
+    def ClearText(self,element):
+        try:
+            element.clear()
+        except Exception,msg:
+            print 'Text Clear Failed!'
             pass
 
     def FindElementByName(self,elementName):

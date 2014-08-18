@@ -1,7 +1,9 @@
 PhantomJS is launching GhostDriver...
-[INFO  - 2014-04-26T19:20:09.597Z] GhostDriver - Main - running on port 53996
-[INFO  - 2014-04-26T19:20:10.291Z] Session [c8acb190-cd77-11e3-af38-8df4c9f06bd9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
-[INFO  - 2014-04-26T19:20:10.291Z] Session [c8acb190-cd77-11e3-af38-8df4c9f06bd9] - page.customHeaders:  - {}
-[INFO  - 2014-04-26T19:20:10.291Z] Session [c8acb190-cd77-11e3-af38-8df4c9f06bd9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2014-04-26T19:20:10.292Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c8acb190-cd77-11e3-af38-8df4c9f06bd9
-[ERROR - 2014-04-26T19:20:58.244Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1398540058242
+[INFO  - 2014-05-16T11:58:24.894Z] GhostDriver - Main - running on port 12702
+[INFO  - 2014-05-16T11:58:26.300Z] Session [63546070-dcf1-11e3-9350-af87988cd95b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2014-05-16T11:58:26.300Z] Session [63546070-dcf1-11e3-9350-af87988cd95b] - page.customHeaders:  - {}
+[INFO  - 2014-05-16T11:58:26.300Z] Session [63546070-dcf1-11e3-9350-af87988cd95b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2014-05-16T11:58:26.300Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 63546070-dcf1-11e3-9350-af87988cd95b
+[ERROR - 2014-05-16T11:58:36.556Z] Session [63546070-dcf1-11e3-9350-af87988cd95b] - page.onError - msg: ReferenceError: Can't find variable: s
+[ERROR - 2014-05-16T11:58:36.556Z] Session [63546070-dcf1-11e3-9350-af87988cd95b] - page.onError - stack:
+  onclick (https://my.angieslist.com/AngiesList/login.aspx:210)

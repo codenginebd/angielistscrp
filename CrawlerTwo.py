@@ -61,7 +61,7 @@ while True:
 
     print "Proxy IP Found: "
     print len(proxy_ip_list)
-    cred_list = db.get_cred_list(start=0,limit=35)
+    cred_list = db.get_cred_list(start=45,limit=1000)
     if not cred_list:
         print "Cred List %s" % str(last_saved_cred_id)
         break
